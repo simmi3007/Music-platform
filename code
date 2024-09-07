@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myTunes Website</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;  width: 100%;
+  
+}
+
+section {
+  scroll-margin: 50px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+
+.welcome-section .container{
+    place-items:center;
+    text-align:center;
+    padding-top:-30px;
+    font-size:50px;
+    font-family: Bradley Hand ITC;
+}
+.hero-section {
+  background-image: url(images/hero_image.png);
+  height: 100vh;
+  display: grid;
+  
+  place-items: center;
+  text-align: center;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero-section h1 {
+  font-size: 96px;
+}
+.hero-section h3 {
+  font-size: 32px;
+}
+
+.music-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top:-10px;
+  padding-top:-100px;
+}
+
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+.primary-btn {
+  background-color: var(--red600);
+  color: white;
+}
+.secondary-btn {
+  background-color: var(--purple300);
+  color: white;
+}
+
+.about-music {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-section {
+  background-image: url(images/video.png);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  
+  text-align: center;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">myTunes</div>
+
+        <ul>
+          <a href="#hero">
+            <li>Overview</li>
+          </a>
+          <a href="#music">
+            <li>Music</li>
+          </a>
+          
+         
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome-section" id="welcome">
+        <div class="container">
+            <h1>    Welcome to myTunes</h1>
+        </div>
+      </section>
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <h1>myTunes</h1>
+          <h3>Your music, movies, and TV shows take center stage.</h3>
+          <p>
+            myTunes is the best way to organize and enjoy the music, movies, and
+            TV shows you already have — and shop for the ones you want. Enjoy
+            all the entertainment myTunes has to offer on your Mac and PC.
+          </p>
+        </div>
+      </section>
+      <section class="music-section" id="music">
+        <div class="container">
+          <h2>
+            <span><i class="fa fa-music"></i></span>
+            Music
+          </h2>
+          <h4>
+            Stream over 45 million songs, ad-free. Or download albums and tracks
+            to listen to offline. All the music in your personal myTunes library
+            — no matter where it came from — lives right alongside the Orange
+            Music catalog. Start your free three-month trial with no commitment,
+            and cancel anytime.
+          </h4>
+          
+          <a href="C:\Users\HP\.vscode\index.html\page1.html"><button class="primary-btn">Start Your Trail Now</button></a>
+          
+          
+          <p>
+            Orange Music is available in myTunes, and for iOS and Android
+            devices.
+          </p>
+          <div class="ipad-iphone-img">
+            <img src="C:\Users\HP\.vscode\index.html\ipad-iphone.jpg" alt="iphone ipad" />
+          </div>
+        </div>
+      </section>
+      <section class="about-music container">
+        <h3>The movie and TV collection you always wished for. Granted.</h3>
+        <p>
+          With over 100,000 movies and TV shows to choose from, there's always
+          something great to watch on myTunes and if you watch on Orange TV 4K,
+          you'll be able to enjoy a tremendous selection of your favorite
+          content in 4K HDR. So get ready to enjoy episodes of your favorite TV
+          shows or hit movies you've been waiting to see — anytime, anywhere.
+          Just tap to play, or even download if you're going somewhere you won't
+          have Wi-Fi.
+        </p>
+        <button class="secondary-btn">Read more</button>
+        <div class="mac-img">
+          <img src="C:\Users\HP\.vscode\index.html\mac.jpg" alt="macbook" />
+        </div>
+      </section>
+      <section class="video-section" id="video">
+        <div class="container">
+          <p style="font-size: 45px; font-weight: bold; ">A world of entertainment. Available wherever you are.</p>
+          <p style="font-size: 30px; font-weight: bolder; ">
+            Music is like a universal language of life.It is basically the
+            sound that is brought together through the harmony of various Instruments.
+            Our life would have been totally empty and different without music.It is 
+            something that every human being enjoys.Music can heal the pain.
+          </p>
+        </div>
+      </section>
+    </main> 
+    </main>
+    <footer>
+      <section class="footer-upper">
+        <div class="container">
+          <div class="footer-links">
+            <h4>Shop & Learn</h4>
+            <ul>
+              <li>Music</li>
+              <li>Movies</li>
+              <li>Shows</li>
+              <li>Apps</li>
+              <li>Categories</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Orange Store</h4>
+            <ul>
+              <li>Find a Store</li>
+              <li>Today at Orange</li>
+              <li>Financing</li>
+              <li>Orange Camp</li>
+              <li>Order Status</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Education & Business</h4>
+            <ul>
+              <li>Orange & Education</li>
+              <li>Shop for Collage</li>
+              <li>Orange & Business</li>
+              <li>Shop for Business</li>
+              <li>Jobs</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>About Orange</h4>
+            <ul>
+              <li>Newsroom</li>
+              <li>Orange Leadership</li>
+              <li>Investors</li>
+              <li>Envents</li>
+              <li>Contact Orange</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lower">
+        <p>Thank you for visiting our site</p>
+      </section>
+    </footer>
+  </body>
+</html>
